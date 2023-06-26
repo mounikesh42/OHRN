@@ -1,0 +1,37 @@
+<h1>Open Human-Resources Network</h1>
+<div class="container">
+    <mat-form-field appearance="fill">
+      <input matInput placeholder="Search" #searchInput (input)="onSearch(searchInput.value)">
+    </mat-form-field>
+  </div>
+<div *ngFor="let job of jobs">
+    <mat-card>
+        <mat-list>
+          <b>Company name:</b>{{ job.company_name }}
+
+        </mat-list>
+        <mat-list>
+          <b>Job Description:</b>  {{ job.job_description }}   
+
+        </mat-list>
+        <mat-list>
+            <b>Job Type:</b>  {{ job.job_type }}   
+  
+          </mat-list>
+          <mat-list>
+            <b>Job  skills:</b>  {{ job.skills }}   
+  
+          </mat-list>
+          <mat-list>
+            <b>reference:</b>  {{ job.reference_name }}   
+  
+          </mat-list>
+          <mat-list>
+            <b>Employeer-email:</b>  {{ job.email }}   
+  
+          </mat-list>
+      </mat-card>
+      <br>
+      <br>
+</div>
+

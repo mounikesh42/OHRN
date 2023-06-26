@@ -1,0 +1,41 @@
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  mat-form-field {
+    color: #333;
+    margin-bottom: 20px;
+    width: 400px; /* Adjust the width as needed */
+    padding: 20px;
+  }
+  
+  mat-card {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  mat-list {
+    width: 400px;
+    margin: 0 auto;
+    /* padding: 20px; */
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+  }
+  mat-list-item {
+    height: 500px;
+  }
+  
+  mat-list-item:hover {
+    background-color: #f0f0f0;
+  }
+  
