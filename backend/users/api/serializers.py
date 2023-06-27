@@ -87,6 +87,6 @@ class UserDetailSerializer(serializers.ModelSerializer):
         model = User
         fields = (
             'pk', 'email', 'first_name', 'last_name',  
-            'phone_number'  
+            'phone_number' ,'verified' 
         )
         read_only_fields = ('email','username')

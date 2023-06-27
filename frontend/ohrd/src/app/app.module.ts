@@ -25,6 +25,8 @@ import { MatOptionModule } from '@angular/material/core';
 import { MatSelectModule } from '@angular/material/select';
 
 const routes: Routes = [
+  { path: '', component: JobListComponent },
+
   { path: 'login', component: LoginComponent },
   { path: 'registration', component: RegistrationComponent },
   { path: 'jobs', component: JobListComponent },
