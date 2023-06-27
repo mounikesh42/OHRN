@@ -1,0 +1,33 @@
+
+
+<form class="job-form" (submit)="onSubmit()">
+    <mat-form-field>
+      <input matInput placeholder="Company Name" [(ngModel)]="jobData.company_name" name="company_name">
+    </mat-form-field>
+  
+    <mat-form-field>
+      <input matInput placeholder="Job Description" [(ngModel)]="jobData.job_description" name="job_description">
+    </mat-form-field>
+  
+    <mat-form-field>
+      <mat-select placeholder="Job Type" [(ngModel)]="jobData.job_type" name="job_type">
+        <mat-option value="Part-time">Part-time</mat-option>
+        <mat-option value="Full-time">Full-time</mat-option>
+      </mat-select>
+    </mat-form-field>
+  
+    <mat-form-field>
+      <input matInput placeholder="Skills" [(ngModel)]="jobData.skills" name="skills">
+    </mat-form-field>
+
+    <mat-form-field>
+        <input matInput placeholder="Reference" name="reference" [(ngModel)]="jobData.reference_name">
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput placeholder="Email" name="email" [(ngModel)]="jobData.email">
+      </mat-form-field>
+  
+    <button mat-raised-button color="primary" type="submit">Create Job</button>
+  </form>
+  

@@ -1,0 +1,28 @@
+<mat-toolbar color="primary" class="navbar">
+ <span routerLink="/jobs">OHRN</span>
+    <span class="spacer"></span>
+    <div class="button-container">
+        <ng-container *ngIf="getUserFromLocalStorage(); else showLoginButton">
+            <!-- User is logged in, display user-specific buttons -->
+            <mat-toolbar>
+              <span>{{ user.first_name }}</span>
+              <button mat-icon-button [matMenuTriggerFor]="menu" >
+                <mat-icon>more_vert</mat-icon>
+              </button>
+              <mat-menu #menu="matMenu">
+                <button mat-menu-item>
+                  <span routerLink="/post">Post Job</span>
+                </button>
+        
+                <button mat-menu-item>
+                  <span (click)="logout()">Logout</span>
+                </button>
+              </mat-menu>
+              </mat-toolbar>
+          </ng-container>
+          <ng-template #showLoginButton>
+            <!-- User is not logged in, display login button -->
+            <button mat-button routerLink="/login">Login</button>
+          </ng-template>
+    </div>
+  </mat-toolbar>

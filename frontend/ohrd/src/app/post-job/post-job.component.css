@@ -1,0 +1,17 @@
+.job-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    margin: 0 auto;
+  }
+  
+  .job-form mat-form-field {
+    width: 100%;
+  }
+  
+  .job-form button {
+    margin-top: 20px;
+    align-self: center;
+  }
+  

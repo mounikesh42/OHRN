@@ -1,0 +1,36 @@
+<div class="container"> 
+    <mat-card class="card">
+        <h1>Register</h1>
+      
+        <form class="loginform" (submit)="onSubmit()">
+          <mat-form-field>
+            <input matInput placeholder="First Name" [(ngModel)]="registrationData.first_name" name="first_name">
+          </mat-form-field>
+      
+          <mat-form-field>
+            <input matInput placeholder="Last Name" [(ngModel)]="registrationData.last_name" name="last_name">
+          </mat-form-field>
+          
+          <mat-form-field>
+            <input matInput placeholder="Email" [(ngModel)]="registrationData.email" name="email">
+          </mat-form-field>
+          
+          <mat-form-field>
+            <input matInput type="password" placeholder="Password" [(ngModel)]="registrationData.password" name="password">
+          </mat-form-field>
+          
+          <mat-form-field>
+            <input matInput type="password" placeholder="Confirm Password" [(ngModel)]="registrationData.confirm_password" name="confirm_password">
+          </mat-form-field>
+          
+          <mat-form-field>
+            <input matInput placeholder="Phone Number" [(ngModel)]="registrationData.phone_number" name="phone_number">
+          </mat-form-field>
+          
+          <br>
+    
+          <button mat-raised-button color="primary" type="submit">Register</button>
+        </form>
+      
+    </mat-card>
+</div>

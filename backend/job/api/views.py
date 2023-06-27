@@ -19,7 +19,7 @@ class JobViewSet(viewsets.ModelViewSet):
     def get_permissions(self):
         if self.request.method in ['POST', 'DELETE', 'PUT']:
             self.authentication_classes = [TokenAuthentication]
-            self.permission_classes = [IsAuthenticated]
+            # self.permission_classes = [IsAuthenticated]
         else:
             self.authentication_classes = []
             self.permission_classes = []
