@@ -17,7 +17,9 @@ export class PostJobComponent {
     job_type: '',
     skills: '',
     reference_name: '',
-    email: ''
+    email: '',
+    connect: ''
+
   };
 
 
@@ -35,6 +37,7 @@ export class PostJobComponent {
         // Handle the success response here
       },
       (error) => {
+        alert(error)
         console.error('Error creating job', error);
         // Handle the error response here
       }

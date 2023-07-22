@@ -28,7 +28,7 @@ export class LoginComponent {
         const user = response.detail;
         if (!user.verified) {
           // User is not verified, show an alert
-          alert('You have not been verified yet. Please contact Shashikanth to verify ');
+          alert('You have not been verified yet. Please contact admin to verify ');
           return;
         }
   
@@ -39,9 +39,10 @@ export class LoginComponent {
         localStorage.setItem('user', JSON.stringify(user));
   
         // Redirect to the desired page (e.g., home page)
-        this.router.navigate(['/jobs']);
+        this.router.navigate(['']);
       },
       error => {
+        alert(error)
         // Handle error response
         console.error('Login failed:', error);
       }

@@ -1,4 +1,4 @@
-<h1>Open Human-Resources Network</h1>
+<h1 style="padding-left: 250px;"> FOSS JOB PORTAL</h1>
 <div class="container">
     <mat-form-field appearance="fill">
       <input matInput placeholder="Search" #searchInput (input)="onSearch(searchInput.value)">
@@ -9,6 +9,10 @@
         <mat-list>
           <div class="skills-container">
             <button mat-stroked-button disabled class="skills-button">{{ job.skills }}</button>
+            
+            <br>
+            <br>
+
             <h3 class="company-name"><b>{{ job.company_name }}</b></h3>
           </div>
           
@@ -33,8 +37,10 @@
           </mat-list>
           <mat-list>
             <b>Email:</b>  {{ job.email }}   
-  
+            <a [href]="job.connect" target="_blank" style="float: right;">Chat</a>
+
           </mat-list>
+
       </mat-card>
       <br>
       <br>

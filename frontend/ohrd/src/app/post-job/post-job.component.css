@@ -1,17 +1,32 @@
+mat-card {
+  width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
 .job-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 400px;
-    margin: 0 auto;
-  }
-  
-  .job-form mat-form-field {
-    width: 100%;
-  }
-  
-  .job-form button {
-    margin-top: 20px;
-    align-self: center;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.column {
+  flex: 1;
+}
+
+mat-form-field {
+  width: 100%;
+}
+
+mat-form-field textarea {
+  /* Set the desired height */
+  height: 100px;
+  /* Optional: Add vertical resizing handle */
+  resize: vertical;
+}
