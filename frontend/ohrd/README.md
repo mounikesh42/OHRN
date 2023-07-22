@@ -13,7 +13,7 @@ Follow the steps below to set up and run the FOSS JOB Portal Angular project on 
 
 1. **Clone the Repository**: Clone this repository to your local machine using the following command:
 
-git clone <repository_url>
+git clone <https://code.swecha.org/Mounikesh/foss-job-portal/-/tree/main/>
 
 2. **Navigate to Project Directory**: Change into the project directory:
 
