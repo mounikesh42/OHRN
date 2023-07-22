@@ -1,13 +1,8 @@
-mat-card {
-    width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    /* padding */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+/* 
+
+.container{
+    padding-top: 100px;
 }
-
-
-
 
 .card {
     width: 400px;
@@ -20,7 +15,4 @@ mat-card {
     flex-direction: column;
     align-items: center;
   }
-
-.container{
-    padding-top: 10px;
-}
+ */

@@ -4,30 +4,35 @@
       <input matInput placeholder="Search" #searchInput (input)="onSearch(searchInput.value)">
     </mat-form-field>
   </div>
-<div *ngFor="let job of jobs">
+<div class="job-details" *ngFor="let job of jobs">
     <mat-card>
         <mat-list>
-          <b>Company name:</b>{{ job.company_name }}
+          <div class="skills-container">
+            <button mat-stroked-button disabled class="skills-button">{{ job.skills }}</button>
+            <h3 class="company-name"><b>{{ job.company_name }}</b></h3>
+          </div>
+          
+   <br>
+
+   || {{ job.job_description }} ||
+          <br>
 
         </mat-list>
-        <mat-list>
-          <b>Job Description:</b>  {{ job.job_description }}   
 
-        </mat-list>
         <mat-list>
-            <b>Job Type:</b>  {{ job.job_type }}   
+            <b>Type:</b>  {{ job.job_type }}   
   
           </mat-list>
-          <mat-list>
+          <!-- <mat-list>
             <b>Job  skills:</b>  {{ job.skills }}   
   
-          </mat-list>
+          </mat-list> -->
           <mat-list>
-            <b>reference:</b>  {{ job.reference_name }}   
+            <b>Reference:</b> {{ job.reference_name }}   
   
           </mat-list>
           <mat-list>
-            <b>Employeer-email:</b>  {{ job.email }}   
+            <b>Email:</b>  {{ job.email }}   
   
           </mat-list>
       </mat-card>

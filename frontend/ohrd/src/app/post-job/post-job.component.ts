@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Router } from '@angular/router';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-post-job',
@@ -8,6 +9,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./post-job.component.css']
 })
 export class PostJobComponent {
+  private apiUrl = environment.apiUrl;
 
   jobData = {
     company_name: '',
@@ -24,7 +26,7 @@ export class PostJobComponent {
     const token = localStorage.getItem('token');
     const headers = new HttpHeaders().set('Authorization', `Token ${token}`);
 
-    this.http.post('http://localhost:8000/api/jobs/', this.jobData, { headers }).subscribe(
+    this.http.post(`${this.apiUrl}/api/jobs/`, this.jobData, { headers }).subscribe(
       (response) => {
         console.log('Job created successfully', response);
         this.router.navigate(['/jobs']);

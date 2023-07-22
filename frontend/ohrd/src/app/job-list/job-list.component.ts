@@ -1,12 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient, HttpParams } from '@angular/common/http';
-
+import { environment } from 'src/environments/environment';
 @Component({
   selector: 'app-job-list',
   templateUrl: './job-list.component.html',
   styleUrls: ['./job-list.component.css']
 })
 export class JobListComponent implements OnInit {
+  private apiUrl = environment.apiUrl;
   jobs!: any[];
   searchQuery!: string;
 
@@ -22,7 +23,7 @@ export class JobListComponent implements OnInit {
       params = params.set('search', this.searchQuery);
     }
 
-    this.http.get<any>('http://localhost:8000/api/jobs', { params }).subscribe(
+    this.http.get<any>(`${this.apiUrl}/api/jobs`, { params }).subscribe(
       (response) => {
         this.jobs = response.results;
       },

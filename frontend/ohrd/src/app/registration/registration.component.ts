@@ -1,12 +1,15 @@
 import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
+import { environment } from 'src/environments/environment';
+
 @Component({
   selector: 'app-registration',
   templateUrl: './registration.component.html',
   styleUrls: ['./registration.component.css']
 })
 export class RegistrationComponent {
+  private apiUrl = environment.apiUrl;
 
 
   registrationData: any = {
@@ -21,7 +24,7 @@ export class RegistrationComponent {
   constructor(private http: HttpClient, private router: Router) { }
 
   onSubmit() {
-    const apiUrl = 'http://localhost:8000/api/auth/register/';
+    const apiUrl = `${this.apiUrl}/api/auth/register/`;
     this.http.post(apiUrl, this.registrationData).subscribe(
       (response) => {
         console.log('Registration successful:', response);

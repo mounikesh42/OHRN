@@ -2,12 +2,16 @@ import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
 import { NgForm } from '@angular/forms';
+import { environment } from 'src/environments/environment';
+
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
+  private apiUrl = environment.apiUrl;
+
   constructor(private http: HttpClient, private router: Router) { }
 
 
@@ -18,7 +22,7 @@ export class LoginComponent {
   
     const loginData = { email, password };
     console.log(loginData)
-    this.http.post<any>('http://localhost:8000/api/auth/login/', loginData).subscribe(
+    this.http.post<any>(`${this.apiUrl}/api/auth/login/`, loginData).subscribe(
       response => {
         // Check if the user is verified
         const user = response.detail;

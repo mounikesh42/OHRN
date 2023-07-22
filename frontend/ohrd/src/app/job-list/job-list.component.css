@@ -19,7 +19,7 @@ h1 {
   }
   
   mat-card {
-    width: 400px;
+    width: 500px;
     margin: 0 auto;
     padding: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -38,4 +38,19 @@ h1 {
   mat-list-item:hover {
     background-color: #f0f0f0;
   }
+  
+  .skills-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .skills-button {
+    margin-right: 10px;
+  }
+  
+  .company-name {
+    margin-left: auto;
+  }
+  
   

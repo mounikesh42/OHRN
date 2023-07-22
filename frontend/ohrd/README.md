@@ -1,27 +1,33 @@
-# Ohrd
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.1.
+# FOSS JOB Portal - Angular Project
 
-## Development server
+FOSS JOB Portal  web application designed to serve as a job portal for Free and Open Source Software (FOSS) enthusiasts and companies looking to hire talent within the FOSS community.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Requirements
 
-## Code scaffolding
+- Nodejs
+- Angular 
+## How to Run the Project
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Follow the steps below to set up and run the FOSS JOB Portal Angular project on your local machine:
 
-## Build
+1. **Clone the Repository**: Clone this repository to your local machine using the following command:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+git clone <repository_url>
 
-## Running unit tests
+2. **Navigate to Project Directory**: Change into the project directory:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+cd foss-job-portal/OHRN/frontend/ohrd/
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
+4. **Install Dependencies**: Install the required node packages using npm:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+npm install -i 
+
+6. **Run the Development Server**: Start the Angular development server:
+
+ng-serve
+
+7. **Access the Application**: Open your web browser and go to `http://localhost:4200/` to access the FOSS JOB Portal.
+
