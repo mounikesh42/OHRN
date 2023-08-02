@@ -37,7 +37,7 @@ export class PostJobComponent {
         // Handle the success response here
       },
       (error) => {
-        alert(error)
+        alert(error.error.non_field_errors)
         console.error('Error creating job', error);
         // Handle the error response here
       }

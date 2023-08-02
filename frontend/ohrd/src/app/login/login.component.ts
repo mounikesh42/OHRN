@@ -42,7 +42,7 @@ export class LoginComponent {
         this.router.navigate(['']);
       },
       error => {
-        alert(error)
+        alert(error.error.non_field_errors)
         // Handle error response
         console.error('Login failed:', error);
       }

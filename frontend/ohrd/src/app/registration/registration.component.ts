@@ -33,7 +33,7 @@ export class RegistrationComponent {
         // Perform any additional actions upon successful registration
       },
       (error) => {
-        alert(error)
+        alert(error.error.non_field_errors)
         console.error('Registration failed:', error);
         // Handle any errors that occur during registration
       }
