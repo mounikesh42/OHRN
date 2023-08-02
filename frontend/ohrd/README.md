@@ -27,6 +27,9 @@ npm install -i
 
 6. **Run the Development Server**: Start the Angular development server:
 
+** please make sure you use `production url` if you are not runing django **
+
+
 ng-serve
 
 7. **Access the Application**: Open your web browser and go to `http://localhost:4200/` to access the FOSS JOB Portal.
