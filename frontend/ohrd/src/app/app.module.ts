@@ -21,9 +21,10 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatMenuModule} from '@angular/material/menu';
 import { PostJobComponent } from './post-job/post-job.component';
 // import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
-import { MatOptionModule } from '@angular/material/core';
+import { MatNativeDateModule, MatOptionModule } from '@angular/material/core';
 import { MatSelectModule } from '@angular/material/select';
-
+import {MatDatepickerModule} from '@angular/material/datepicker'; 
+// MatNativeDateModule
 const routes: Routes = [
   { path: '', component: JobListComponent },
 
@@ -44,8 +45,10 @@ const routes: Routes = [
     PostJobComponent
   ],
   imports: [
+    MatNativeDateModule,
     BrowserModule,
     AppRoutingModule,
+    MatDatepickerModule,
     HttpClientModule,
     BrowserAnimationsModule,
     MatListModule,

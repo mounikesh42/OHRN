@@ -16,7 +16,7 @@ class Job(AuditModel):
     job_description = models.TextField(blank = True, null = True)
     job_type = models.CharField(choices =JOB_TYPE_CHOICES ,max_length = 20)
     email= models.CharField(max_length=250,default='none')
-
+    expiry = models.DateTimeField(null=True,blank=True)
     skills = models.TextField()
     experience=models.CharField(max_length=112,null=True,blank=True)
     reference_name= models.CharField(max_length=120,default='none')

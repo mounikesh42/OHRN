@@ -18,7 +18,10 @@ export class PostJobComponent {
     skills: '',
     reference_name: '',
     email: '',
-    connect: ''
+    connect: '',
+    experience: '',
+    expiry:null,
+
 
   };
 
