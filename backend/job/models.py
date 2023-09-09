@@ -18,8 +18,10 @@ class Job(AuditModel):
     email= models.CharField(max_length=250,default='none')
 
     skills = models.TextField()
+    experience=models.CharField(max_length=112,null=True,blank=True)
     reference_name= models.CharField(max_length=120,default='none')
     connect = models.CharField(max_length=255,null=True,blank=True)
+
 
     def __str__(self):
         return self.company_name
